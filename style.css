@@ -20,13 +20,17 @@ header{
     padding: 1px 5%;
     display: flex;
     align-items: center;
-    justify-content:  space-between ;
     z-index: 1000; 
 }
-
+header .navbar i {
+    padding-right: 50px;
+}
 
 header .navbar ul{
     list-style: none;
+}
+header a{
+    padding-inline-start: 80px;
 }
 
 header .navbar ul li{

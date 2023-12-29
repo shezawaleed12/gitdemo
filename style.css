@@ -1,7 +1,13 @@
+
+@font-face {
+   font-family: Font;
+   src: url(/font/sf-pro-text_bold.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Font;
 }
 html,body{
     height: 100%;
@@ -59,7 +65,7 @@ html,body{
     width: 33.33%;
     background: #080808;
     height: 250px;
-    transition: width 2s, height 4s;
+   
 
 
 
@@ -67,8 +73,10 @@ html,body{
  .column a {
     display: block;
     float: none;
-   
+    transition: all 0.5s ease-in;
     text-align: center;
+    text-decoration: none;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     
 
  }
@@ -80,4 +88,16 @@ html,body{
     content: '';
     display: table;
     clear: both;
+ }
+
+ /* main-1 */
+ .main-1{
+   width: 100%;
+   height: 60vh;
+  background-color:#eee;
+
+ }
+ .main-1 img{
+   width: 100%;
+   height: 100vh;
  }

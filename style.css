@@ -1,31 +1,83 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header {
+html,body{
+    height: 100%;
     width: 100%;
-    height: auto;
-    background-color:	#202020 ;
-   
 }
-
-.container{
-     width: 1170px;
-     margin: auto;
-     display: flex;
-    
-    
-}
-.logo i{
-    margin-inline-start: 50px;
-    
-}
-
-
-nav ul{
+.navbar {
+    overflow: hidden;
     display: flex;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    background:#080808 ;
+
 }
-nav ul li{
-    padding: 8px 8px; 
-    list-style: none;
-}
+
+ .navbar a {
+    float: left;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+ }
+ .d{
+    float:left;
+    overflow: hidden;
+ }
+ .d .d-btn{
+    font-size: 12px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 14px 16px;
+    background: inherit;
+ 
+
+ }
+ .d-content {
+    display: none;
+    position: absolute;
+    background: #f9f9f9;
+    width: 100%;
+    left: 0;
+    top: 35px;
+    z-index: 10;
+   
+ }
+ .d:hover .d-content {
+    display: block;
+   
+ }
+ .column{
+    float: left;
+    width: 33.33%;
+    background: #080808;
+    height: 250px;
+    transition: width 2s, height 4s;
+
+
+
+ }
+ .column a {
+    display: block;
+    float: none;
+   
+    text-align: center;
+    
+
+ }
+ .column h5{
+    color: #eee;
+    
+ }
+ .row::after {
+    content: '';
+    display: table;
+    clear: both;
+ }

@@ -13,10 +13,13 @@ html,body{
     height: 100%;
     width: 100%;
 }
+
 #main{
    width: 100%;
 min-height: 100vh;
+
 }
+
 .navbar {
     overflow: hidden;
     display: flex;
@@ -24,14 +27,33 @@ min-height: 100vh;
     justify-content: center;
     align-items: center;
     background:#080808 ;
+    padding: 14px 16px;
 
 }
 
+.header-inner{
+  z-index: 99;
+  position: absolute;
+  background-color: transparent;
+}
+.nav-item .nav-link{
+  display: block;
+  font-size: 12px;
+  color: #eee;
+line-height: 36px;
+transition: 0.15s;
+  
+}
+.nav-item .nav-link:hover{
+  color:green;
+  
+}
+/* text 
  .navbar a {
     float: left;
     font-size: 12px;
     color: white;
-    text-align: center;
+    
     padding: 14px 16px;
     text-decoration: none;
    
@@ -92,13 +114,16 @@ min-height: 100vh;
     content: '';
     display: table;
     clear: both;
- }
+ }*/
 
- /* main-1 */
+ 
+ /* text */
+ 
  .main-1{
    width: 100%;
    position: relative;
    height: 60vh;
+   margin-top: 30px;
   background-color:#eee;
  }
 /* text */
